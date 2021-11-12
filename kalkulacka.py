@@ -42,17 +42,13 @@ def kalkulacka():
 def kontrola():
     a = input("a = ")
     b = input("b = ")
-    kontrola1 = type(a) == str
-    kontrola2 = type(b) == str
-    if str(kontrola1):
-        print("Zadal jsi písmeno!")
-        kalkulacka()
-    elif str(kontrola2):
-        print("Zadal jsi písmeno!")
-        kalkulacka()
+    if a.isdigit == True and b.isdigit == True:
+        a = float(a)
+        b = float(b)
     else:
-        a = int(a)
-        b = int(b)
+        print("Zadal jsi písmeno")
+        kalkulacka()
+    
         
 pozdrav()
 kalkulacka()
